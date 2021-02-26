@@ -1,0 +1,5 @@
+node_modules
+vscode-eos-icons-*.vsix
+.log
+theme
+.env3

@@ -1,0 +1,39 @@
+{
+  "name": "eos-icons-vscode",
+  "version": "0.0.1",
+  "publisher": "EOS-uiux-Solutions",
+  "license": "MIT",
+  "description": "The iconic and open source font made for EOS Design System for VSCode.",
+  "keywords": ["iconic", "font", "eos", "icons", "product-icon"],
+  "author": "SUSE UX/UI team",
+  "engines": {
+    "vscode": ">=1.53.0"
+  },
+  "scripts": {
+    "cleandeps": "rm -rf node_modules .env3",
+    "package": "vsce package --yarn",
+    "prepare": "python3 -m venv .env3 && . .env3/bin/activate && pip install fonttools",
+    "vscode:prepublish": ". .env3/bin/activate && ./create_icon_theme.py"
+  },
+  "contributes": {
+    "productIconThemes": [
+      {
+        "id": "eos-icons",
+        "label": "EOS Icons",
+        "path": "./theme/eos-icons-product-icon-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "eos-icons": "^4.12.0",
+    "vsce": ">=1.85"
+  },
+  "homepage": "https://eos-icons.com/",
+  "bugs": {
+    "url": "https://github.com/EOS-uiux-Solutions/eos-icons-vscode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EOS-uiux-Solutions/eos-icons-vscode.git"
+  }
+}
