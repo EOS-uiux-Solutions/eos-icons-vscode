@@ -8,9 +8,7 @@ from fontTools.ttLib import TTFont
 
 dest = join(dirname(__file__), "./theme/eos-icons.woff")
 shutil.copyfile(
-    join(
-        dirname(__file__), "./node_modules/eos-icons/dist/fonts/eos-icons.woff"
-    ),
+    join(dirname(__file__), "./node_modules/eos-icons/dist/fonts/eos-icons.woff"),
     dest,
 )
 
