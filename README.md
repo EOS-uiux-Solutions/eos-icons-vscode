@@ -33,3 +33,14 @@ to launch a debugging session. This will create a fresh VSCode instance with the
 extension pre-installed and loaded. Note that sometimes the icon theme is not
 properly loaded on launch, in that case switch the Product Icon Theme to the
 default and back to EOS Icons.
+
+## Learn more about the EOS UX/UI Solutions
+
+- [EOS Icons](https://eos-icons.com)
+
+- [EOS User Story](https://userstory.site)
+
+- [Follow us on Twitter](https://twitter.com/eos_uxui)
+
+- [Join us on Slack](https://slack.userstory.site)
+
